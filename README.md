@@ -1,37 +1,16 @@
-## Deploy JSON Server to Vercel
+![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)
+## 部屬 json-server 到 Render web service
 
-A template to deploy [JSON Server](https://github.com/typicode/json-server) to [Vercel](https://vercel.com), allow you to run fake REST API online!
+1. fork repo
 
-Demo from this repository: 
+2. 更改 db.json 內容
 
-1. https://json-server-in.vercel.app
-2. https://json-server-in.vercel.app/api/posts
+3. 若不需使用 `json-server-auth` 請移除 `server.js` 中 `5` `12` 行
 
-### How to use
+4. 在 Render 新增 `web service` 並選擇 fork 後的 repo
 
-1. Click "**Use this template**" or clone this repository.
-2. Update or use the default [`db.json`](./db.json) in the repository.
-3. Sign Up or login into [Vercel](https://vercel.com).
-4. From the Vercel dashboard, click "**+ New Project**" then "**Import**" your repository.
-5. In the "**Configure Project**" screen, leave everything default and click "**Deploy**".
-6. Wait until deployment is done, and your own JSON server is ready to serve!
+5. Build Command 記得輸入 `npm install`，Start Command 輸入 `node server.js`
 
-## Default `db.json`
+6. Create Web Service 
 
-```json
-{
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
-}
-```
-
-## Reference
-
-1. https://github.com/typicode/json-server
-2. https://vercel.com
-3. https://shadowsmith.com/how-to-deploy-an-express-api-to-vercel
+7. 等待部屬及發布 (需要一點時間)
